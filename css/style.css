@@ -1,55 +1,60 @@
 :root {
-    --color-principal: #212529; /* Color principal oscuro */
-    --color-secundario: #212529; /* Color secundario más oscuro */
-    --color-texto: #212529; /* Cambia el color del texto a oscuro para contraste */
-    --color-enlace-hover: #495057; /* Color más oscuro para enlace al pasar el ratón */
-    --color-fondo: #ffffff; /* Color de fondo general claro */
-    --color-titulo-navbar: #212529; /* Color oscuro para el título de la navbar */
-    --color-fondo-beneficios: #f8f9fa; /* Color de fondo claro para beneficios */
-    --color-fondo-productos: #e9ecef; /* Color de fondo claro para productos */
-    --color-fondo-testimonios: #f8f9fa; /* Color de fondo claro para testimonios */
-    --color-fondo-contacto: #e9ecef; /* Color de fondo claro para contacto */
-    --color-fondo-footer: #f8f9fa; /* Color de fondo claro para el pie de página */
-    --color-encabezado-seccion: #0b9c7b; /* Mantén el color verde para los encabezados */
-    --color-texto-seccion: #212529; /* Color del texto de las secciones más oscuro para contraste */
+    --color-principal: #212529;
+    --color-secundario: #212529;
+    --color-texto: #212529;
+    --color-enlace-hover: #495057;
+    --color-fondo: #ffffff;
+    --color-titulo-navbar: #212529;
+    --color-fondo-beneficios: #f8f9fa;
+    --color-fondo-productos: #e9ecef;
+    --color-fondo-testimonios: #f8f9fa;
+    --color-fondo-contacto: #e9ecef;
+    --color-fondo-footer: #f8f9fa;
+    --color-encabezado-seccion: #0b9c7b;
+    --color-texto-seccion: #212529;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--color-fondo); /* Usa la variable actualizada para el fondo */
-    color: var(--color-texto); /* Asegura el contraste adecuado con el fondo */
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
 }
 
-/* Otros estilos permanecen iguales, solo asegúrate de que todo texto tenga suficiente contraste */
+.custom-navbar {
+    background-color: rgba(0, 0, 0, 0.0);
+    border-bottom: none;
+}
 
-body {
-    .custom-navbar {
-        background-color: rgba(0, 0, 0, 0.0); /* Mantén el fondo transparente o ajusta según tus preferencias */
-        border-bottom: none; /* Elimina el borde inferior si existe */
-    }
+.custom-navbar .navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.0);
+}
 
-    .custom-navbar .navbar-toggler {
-        background-color: rgba(255, 255, 255, 0.0); /* Ajusta el fondo del botón del toggler */
-    }
+.custom-navbar .nav-link, .custom-navbar .navbar-brand {
+    color: #ffffff;
+}
 
-    .custom-navbar .nav-link, .custom-navbar .navbar-brand {
-        color: #0b9c7b; /* Establece el color del texto de los enlaces y el título a blanco */
-    }
+.custom-navbar .nav-link:hover {
+    color: #343a40;
+}
 
-    .custom-navbar .nav-link:hover {
-        color: #343a40; /* Color al pasar el ratón, ajusta si es necesario */
-    }
+/* Carrusel */
+.carousel-caption h5 {
+    color: var(--color-encabezado-seccion);
+}
 
+.carousel-caption p {
+    color: var(--color-texto-seccion);
+}
 
 @media (max-width: 768px) {
     .carousel-item img {
-        height: 300px;
+        height: auto;
     }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .carousel-item img {
-        height: 400px;
+        height: auto; /
     }
 }
 
@@ -58,13 +63,21 @@ body {
         height: 970px;
     }
 }
-/* Carrusel */
-.carousel-caption h5 {
-    color: var(--color-encabezado-seccion);
+
+
+.carousel-caption .custom-text {
+    color: #ffffff;
 }
 
-.carousel-caption p {
-    color: var(--color-texto-seccion);
+.carousel-caption {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-carrusel-texto);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
 }
 
 /* Secciones */
@@ -83,6 +96,7 @@ body {
 .custom-text, .card-title, .card-text {
     color: var(--color-texto-seccion);
 }
+
 /* Testimonios */
 #section4 {
     background-color: var(--color-fondo-testimonios);
@@ -105,24 +119,4 @@ body {
 footer {
     background-color: var(--color-fondo-footer);
     color: var(--color-texto);
-}
-.carousel-item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-    .carousel-caption .custom-text {
-        color: #ffffff; /* Cambia el color a blanco */
-    }
-}
-.carousel-caption {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: var(--color-carrusel-texto);
-    /* Añadir un degradado oscuro para mejorar el contraste del texto */
-    background: rgba(0, 0, 0, 0.5); /* Puedes ajustar la transparencia según sea necesario */
-    padding: 20px;
-    border-radius: 8px;
 }
