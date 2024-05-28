@@ -101,6 +101,6 @@ footer {
 
 @media (min-width: 1025px) {
     .carousel-item img {
-        height: 620px;
+        height: 900px;
     }
 }
