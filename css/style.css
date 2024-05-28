@@ -15,7 +15,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Shojumaru', shojumaru;
     background-color: var(--color-fondo);
     color: var(--color-texto);
 }
