@@ -1,149 +1,89 @@
+
 :root {
-    --color-principal: #ff6600; /* Color principal */
-    --color-secundario: #343a40; /* Color secundario */
-    --color-texto: #ffffff; /* Color del texto */
-    --color-enlace-hover: #f8f9fa; /* Color del texto al pasar el ratón */
-    --color-fondo: #f4f4f4; /* Color de fondo general */
-    --color-titulo-navbar: #00ff00; /* Color del título de la navbar */
-    --color-fondo-beneficios: #f8f9fa; /* Color de fondo de la sección de beneficios */
-    --color-fondo-productos: #ffffff; /* Color de fondo de la sección de productos */
-    --color-fondo-testimonios: #f8f9fa; /* Color de fondo de la sección de testimonios */
-    --color-fondo-contacto: #ffffff; /* Color de fondo de la sección de contacto */
-    --color-fondo-footer: #343a40; /* Color de fondo del pie de página */
-    --color-encabezado-seccion: #ff6600; /* Color de los encabezados de las secciones */
-    --color-texto-seccion: #333333; /* Color del texto de las secciones */
-    --color-encabezado-carrusel-1: #ffffff; /* Color del primer encabezado del carrusel */
-    --color-texto-carrusel-1: #cccccc; /* Color del primer texto del carrusel */
-    --color-encabezado-carrusel-2: #000000; /* Color del segundo encabezado del carrusel */
-    --color-texto-carrusel-2: #888888; /* Color del segundo texto del carrusel */
-    --color-encabezado-carrusel-3: #ff0000; /* Color del tercer encabezado del carrusel */
-    --color-texto-carrusel-3: #00ff00; /* Color del tercer texto del carrusel */
+    --color-principal: #212529; /* Color principal oscuro */
+    --color-secundario: #343a40; /* Color secundario más oscuro */
+    --color-texto: #f8f9fa; /* Color del texto claro */
+    --color-enlace-hover: #adb5bd; /* Color del enlace al pasar el ratón */
+    --color-fondo: #212529; /* Color de fondo general oscuro */
+    --color-titulo-navbar: #ffffff; /* Color verde para el título de la navbar */
+    --color-fondo-beneficios: #343a40; /* Color de fondo de la sección de beneficios */
+    --color-fondo-productos: #495057; /* Color de fondo de la sección de productos */
+    --color-fondo-testimonios: #343a40; /* Color de fondo de la sección de testimonios */
+    --color-fondo-contacto: #495057; /* Color de fondo de la sección de contacto */
+    --color-fondo-footer: #212529; /* Color de fondo del pie de página */
+    --color-encabezado-seccion: #fd7e14; /* Color naranja para los encabezados de las secciones */
+    --color-texto-seccion: #ced4da; /* Color del texto de las secciones más claro */
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--color-fondo);
-}
-
-/* Navbar personalizada */
-.navbar-personalizada {
-    background-color: var(--color-principal);
-}
-
-.navbar-personalizada .nav-link {
-    color: var(--color-texto) !important;
-}
-
-.navbar-personalizada .nav-link:hover {
-    color: var(--color-enlace-hover) !important;
-}
-
-.navbar-titulo {
-    color: var(--color-titulo-navbar) !important;
-}
-
-/* Carrusel */
-.carousel-item img {
-    height: 75vh;
-    object-fit: cover;
-}
-
-.carousel-caption h5 {
-    font-size: 2rem;
-}
-
-.carousel-caption p {
-    font-size: 1.2rem;
-}
-
-.carousel-item:nth-child(1) .carousel-caption h5 {
-    color: var(--color-encabezado-carrusel-1);
-}
-
-.carousel-item:nth-child(1) .carousel-caption p {
-    color: var(--color-texto-carrusel-1);
-}
-
-.carousel-item:nth-child(2) .carousel-caption h5 {
-    color: var(--color-encabezado-carrusel-2);
-}
-
-.carousel-item:nth-child(2) .carousel-caption p {
-    color: var(--color-texto-carrusel-2);
-}
-
-.carousel-item:nth-child(3) .carousel-caption h5 {
-    color: var(--color-encabezado-carrusel-3);
-}
-
-.carousel-item:nth-child(3) .carousel-caption p {
-    color: var(--color-texto-carrusel-3);
-}
-
-/* Sección de Beneficios */
-#seccion2 {
-    background-color: var(--color-fondo-beneficios);
-}
-
-#seccion2 .encabezado-personalizado {
-    color: var(--color-encabezado-seccion);
-}
-
-#seccion2 .texto-personalizado, #seccion2 .card-title, #seccion2 .card-text {
-    color: var(--color-texto-seccion);
-}
-
-/* Sección de Productos/Servicios */
-#seccion3 {
-    background-color: var(--color-fondo-productos);
-}
-
-#seccion3 .encabezado-personalizado {
-    color: var(--color-encabezado-seccion);
-}
-
-#seccion3 .texto-personalizado {
-    color: var(--color-texto-seccion);
-}
-
-/* Sección de Testimonios */
-#seccion4 {
-    background-color: var(--color-fondo-testimonios);
-}
-
-#seccion4 .encabezado-personalizado {
-    color: var(--color-encabezado-seccion);
-}
-
-#seccion4 .texto-personalizado {
-    color: var(--color-texto-seccion);
-}
-
-/* Sección de Contacto */
-#seccion5 {
-    background-color: var(--color-fondo-contacto);
-}
-
-#seccion5 .encabezado-personalizado {
-    color: var(--color-encabezado-seccion);
-}
-
-#seccion5 .texto-personalizado {
-    color: var(--color-texto-seccion);
-}
-
-/* Footer */
-footer {
-    background-color: var(--color-fondo-footer);
     color: var(--color-texto);
 }
 
-/* Selectores personalizados */
-.encabezado-personalizado {
-    font-size: 2.5rem;
-    font-weight: bold;
+.custom-navbar {
+    background-color: rgba(0, 0, 0, 0.0); /* Fondo semitransparente */
+    border-bottom: none; /* Elimina el borde inferior si existe */
 }
 
-.texto-personalizado {
-    font-size: 1.2rem;
+.custom-navbar .navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.0); /* Hacer el botón del toggler semitransparente */
+}
+
+.custom-navbar .nav-link {
+    color: var(--color-texto); /* Establecer el color del texto de los enlaces */
+}
+
+.custom-navbar .nav-link:hover {
+    color: var(--color-enlace-hover); /* Color al pasar el ratón */
+}
+
+
+/* Carrusel */
+.carousel-caption h5 {
+    color: var(--color-encabezado-seccion);
+}
+
+.carousel-caption p {
+    color: var(--color-texto-seccion);
+}
+
+/* Secciones */
+#section2, #section4 {
+    background-color: var(--color-fondo-beneficios);
+}
+
+#section3, #section5 {
+    background-color: var(--color-fondo-productos);
+}
+
+.custom-heading {
+    color: var(--color-encabezado-seccion);
+}
+
+.custom-text, .card-title, .card-text {
+    color: var(--color-texto-seccion);
+}
+/* Testimonios */
+#section4 {
+    background-color: var(--color-fondo-testimonios);
+    color: var(--color-texto-seccion);
+}
+
+.blockquote {
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 10px solid var(--color-encabezado-seccion);
+    padding: 1.5rem;
+    margin: 20px 0;
+}
+
+.blockquote-footer {
+    color: var(--color-texto-seccion);
+    opacity: 0.8;
+}
+
+/* Pie de página */
+footer {
+    background-color: var(--color-fondo-footer);
+    color: var(--color-texto);
 }

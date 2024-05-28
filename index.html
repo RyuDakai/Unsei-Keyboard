@@ -15,22 +15,21 @@
 </head>
 <body>
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg custom-navbar">
-    <a class="navbar-brand navbar-title" href="#">Unsei Keyboards</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+    <a class="navbar-brand" href="#">
+        <img src="img/logo.png" alt="Logo de Unsei Keyboards" height="40"> <!-- Ajusta la ruta y el tamaño según necesites -->
+        Unsei Keyboards
+    </a>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a class="nav-link" href="#section1">Inicio</a></li>
             <li class="nav-item"><a class="nav-link" href="#section2">Beneficios</a></li>
             <li class="nav-item"><a class="nav-link" href="#section3">Productos</a></li>
-            <li class="nav-item"><a class="nav-link" href="#section4">Testimonios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#section4">Opiniones</a></li>
             <li class="nav-item"><a class="nav-link" href="#section5">Contacto</a></li>
         </ul>
     </div>
 </nav>
-
 
 <!-- Sección Principal -->
 <section id="section1" class="container-fluid p-0">
@@ -81,7 +80,7 @@
     <div class="row">
         <div class="col-md-4">
             <div class="card">
-                <img src="img/benefit1.jpg" class="card-img-top" alt="Alta Personalización">
+                <img src="img/Personalizacion.jpeg" class="card-img-top" alt="Alta Personalización">
                 <div class="card-body">
                     <h5 class="card-title">Alta Personalización</h5>
                     <p class="card-text">Configura cada detalle de tu teclado.</p>
@@ -90,7 +89,7 @@
         </div>
         <div class="col-md-4">
             <div class="card">
-                <img src="img/benefit2.jpg" class="card-img-top" alt="Materiales de Calidad">
+                <img src="img/Material.jpeg" class="card-img-top" alt="Materiales de Calidad">
                 <div class="card-body">
                     <h5 class="card-title">Materiales de Calidad</h5>
                     <p class="card-text">Usamos solo los mejores materiales.</p>
@@ -138,10 +137,85 @@
 
 <!-- Sección de Testimonios -->
 <section id="section4" class="container py-5">
-    <h2 class="text-center custom-heading">Testimonios</h2>
+    <h2 class="text-center custom-heading">Opiniones</h2>
     <p class="text-center custom-text">Lo que dicen nuestros clientes.</p>
-    <!-- Aquí puedes agregar testimonios específicos -->
+    <div id="testimoniosCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <blockquote class="blockquote text-center">
+                    <p class="mb-0">"Increíble atención al detalle en cada teclado que he comprado aquí. ¡Un nivel de personalización sin igual!"</p>
+                    <footer class="blockquote-footer">Carlos Gómez <cite title="Source Title">Cliente Regular</cite></footer>
+                </blockquote>
+            </div>
+            <div class="carousel-item">
+                <blockquote class="blockquote text-center">
+                    <p class="mb-0">"El servicio al cliente de Unsei Keyboards es de primera clase. Siempre dispuestos a ayudar y tan apasionados por lo que hacen."</p>
+                    <footer class="blockquote-footer">Lucía Ramírez <cite title="Source Title">Entusiasta de Teclados</cite></footer>
+                </blockquote>
+            </div>
+            <div class="carousel-item">
+                <blockquote class="blockquote text-center">
+                    <p class="mb-0">"Cada teclado que he comprado ha sido una obra de arte. La calidad y el diseño son excepcionales."</p>
+                    <footer class="blockquote-footer">Miguel Ángel Torres <cite title="Source Title">Diseñador Gráfico</cite></footer>
+                </blockquote>
+            </div>
+            <div class="carousel-item">
+                <blockquote class="blockquote text-center">
+                    <p class="mb-0">"Los teclados son simplemente impresionantes. La sensación al escribir es incomparable."</p>
+                    <footer class="blockquote-footer">Sofía López <cite title="Source Title">Escritora Profesional</cite></footer>
+                </blockquote>
+            </div>
+            <div class="carousel-item">
+                <blockquote class="blockquote text-center">
+                    <p class="mb-0">"Recomiendo Unsei Keyboards a cualquiera que busque algo más que un teclado ordinario. ¡Es una inversión que vale la pena!"</p>
+                    <footer class="blockquote-footer">Jorge Martín <cite title="Source Title">Desarrollador de Software</cite></footer>
+                </blockquote>
+            </div>
+            <div class="carousel-item">
+                <blockquote class="blockquote text-center">
+                    <p class="mb-0">"La variedad de keycaps y accesorios es increíble. Siempre encuentro algo nuevo que agregar a mi colección."</p>
+                    <footer class="blockquote-footer">Ana María Sanz <cite title="Source Title">Coleccionista</cite></footer>
+                </blockquote>
+            </div>
+            <div class="carousel-item">
+                <blockquote class="blockquote text-center">
+                    <p class="mb-0">"Después de usar sus teclados, no puedo volver a los modelos convencionales. La experiencia es demasiado buena."</p>
+                    <footer class="blockquote-footer">Eduardo Ruiz <cite title="Source Title">Editor de Video</cite></footer>
+                </blockquote>
+            </div>
+            <div class="carousel-item">
+                <blockquote class="blockquote text-center">
+                    <p class="mb-0">"¡La mejor experiencia de compra online que he tenido! El sitio es fácil de navegar y el proceso de personalización es súper intuitivo."</p>
+                    <footer class="blockquote-footer">Claudia Jiménez <cite title="Source Title">Compradora Online</cite></footer>
+                </blockquote>
+            </div>
+            <div class="carousel-item">
+                <blockquote class="blockquote text-center">
+                    <p class="mb-0">"Sus teclados han mejorado mi rendimiento en los juegos. La respuesta de los switches es perfecta para gaming."</p>
+                    <footer class="blockquote-footer">David Castro <cite title="Source Title">Gamer Profesional</cite></footer>
+                </blockquote>
+            </div>
+            <div class="carousel-item">
+                <blockquote class="blockquote text-center">
+                    <p class="mb-0">"El diseño personalizado que recibí superó todas mis expectativas. Es no solo funcional, sino también una pieza de conversación."</p>
+                    <footer class="blockquote-footer">Lorena Vázquez <cite title="Source Title">Artista Visual</cite></footer>
+                </blockquote>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#testimoniosCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <!-- Botón Siguiente -->
+        <a class="carousel-control-next" href="#testimoniosCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
 </section>
+
+
+
 
 <!-- Sección de Contacto (Formulario) -->
 <section id="section5" class="container py-5">
