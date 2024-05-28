@@ -15,7 +15,7 @@
 }
 
 body {
-    font-family: 'Shojumaru', shojumaru;
+    font-family: 'Playfair Display',sans-serif;
     background-color: var(--color-fondo);
     color: var(--color-texto);
 }
