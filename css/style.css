@@ -11,7 +11,7 @@
     --color-fondo-testimonios: #343a40; /* Color de fondo de la sección de testimonios */
     --color-fondo-contacto: #495057; /* Color de fondo de la sección de contacto */
     --color-fondo-footer: #212529; /* Color de fondo del pie de página */
-    --color-encabezado-seccion: #fd7e14; /* Color naranja para los encabezados de las secciones */
+    --color-encabezado-seccion: #0b9c7b; /* Color naranja para los encabezados de las secciones */
     --color-texto-seccion: #ced4da; /* Color del texto de las secciones más claro */
 }
 
@@ -86,4 +86,21 @@ body {
 footer {
     background-color: var(--color-fondo-footer);
     color: var(--color-texto);
+}
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .carousel-item img {
+        height: 400px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .carousel-item img {
+        height: 900px;
+    }
 }
